@@ -1,0 +1,35 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<style>
+    .box {
+    border-radius: 25px;
+    border: solid 1px #000;
+    border-color: rgb(238, 238, 238);
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    }
+</style>
+<br>
+<div class="container">
+    <div class="row row-cols-2 row gy-5">
+        <div class="col" style="width:35%"><img src="{% static 'portfolio/my_foto.jpg' %}" width="90%" style="border-radius:50%"></div>
+        <div class="col box fst-italic card-text text-wrap text-start" style="width:65%">
+           <h5>
+                        Hi, my name is Anatol and I am an aspiring Python developer.
+                <br><br>On this site, you will find a glimpse of my journey as a beginner developer,
+                        my projects and a brief overview of my skills and experience in the field.
+                        I am passionate about learning and growing as a developer, and I am dedicated to staying up-to-date with the latest technologies 
+                        and programming languages to ensure that I am able to provide the best possible solutions for my projects.
+                <br><br>I know that being a beginner can be overwhelming, but I am determined to learn and grow, and I am excited to share my journey with you.
+                <br><br>Please take a look around and feel free to contact me if you have any questions or if you are interested in working together on a project.
+                        Thank you for visiting!
+            </h5>
+        </div>
+        
+        <div class="col-auto mx-auto text-wrap"><h6></h6></div>
+</div>
+
+{% endblock %}
